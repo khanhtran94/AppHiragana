@@ -13,6 +13,11 @@
 		73EA531222989A1400F65C50 /* Japan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73EA531022989A1400F65C50 /* Japan.xcdatamodeld */; };
 		73EA531422989A1500F65C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EA531322989A1500F65C50 /* Assets.xcassets */; };
 		73EA531722989A1500F65C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EA531522989A1500F65C50 /* LaunchScreen.storyboard */; };
+		73EA533A2298AFF700F65C50 /* JpanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EA53392298AFF700F65C50 /* JpanVC.swift */; };
+		73FC9F8222A82AC9004117B3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8122A82AC9004117B3 /* UIColor+Extension.swift */; };
+		73FC9F8422A82B40004117B3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8322A82B40004117B3 /* UIButton+Extension.swift */; };
+		73FC9F8622A82B64004117B3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8522A82B64004117B3 /* UIImage+Extension.swift */; };
+		73FC9F9022AD918A004117B3 /* hiraganaModel3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8F22AD918A004117B3 /* hiraganaModel3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		73EA531322989A1500F65C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73EA531622989A1500F65C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73EA531822989A1500F65C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EA53392298AFF700F65C50 /* JpanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JpanVC.swift; sourceTree = "<group>"; };
+		73FC9F8122A82AC9004117B3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		73FC9F8322A82B40004117B3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		73FC9F8522A82B64004117B3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		73FC9F8F22AD918A004117B3 /* hiraganaModel3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hiraganaModel3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 			children = (
 				73EA530822989A1400F65C50 /* Japan */,
 				73EA530722989A1400F65C50 /* Products */,
+				73FC9F8F22AD918A004117B3 /* hiraganaModel3.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +70,14 @@
 				73EA530922989A1400F65C50 /* AppDelegate.swift */,
 				73EA530B22989A1400F65C50 /* ViewController.swift */,
 				73EA530D22989A1400F65C50 /* Main.storyboard */,
+				73EA53392298AFF700F65C50 /* JpanVC.swift */,
 				73EA531322989A1500F65C50 /* Assets.xcassets */,
 				73EA531522989A1500F65C50 /* LaunchScreen.storyboard */,
 				73EA531822989A1500F65C50 /* Info.plist */,
 				73EA531022989A1400F65C50 /* Japan.xcdatamodeld */,
+				73FC9F8122A82AC9004117B3 /* UIColor+Extension.swift */,
+				73FC9F8322A82B40004117B3 /* UIButton+Extension.swift */,
+				73FC9F8522A82B64004117B3 /* UIImage+Extension.swift */,
 			);
 			path = Japan;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FC9F8222A82AC9004117B3 /* UIColor+Extension.swift in Sources */,
 				73EA531222989A1400F65C50 /* Japan.xcdatamodeld in Sources */,
+				73FC9F8622A82B64004117B3 /* UIImage+Extension.swift in Sources */,
 				73EA530C22989A1400F65C50 /* ViewController.swift in Sources */,
+				73EA533A2298AFF700F65C50 /* JpanVC.swift in Sources */,
+				73FC9F9022AD918A004117B3 /* hiraganaModel3.mlmodel in Sources */,
 				73EA530A22989A1400F65C50 /* AppDelegate.swift in Sources */,
+				73FC9F8422A82B40004117B3 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJKCU3J46S;
 				INFOPLIST_FILE = Japan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJKCU3J46S;
 				INFOPLIST_FILE = Japan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
