@@ -81,24 +81,11 @@ class ViewController: UIViewController {
   @IBAction func recognizePressed(_ sender: UIButton) {
     resultImage.image = UIImage.init(view: canvas)
     let pixelBuffer = resultImage.image?.pixelBuffer()
-    //let model = hiraganeModel()
-    let model = hiraganaModel3()
+    let model = hiraganeModel()
+    //let model = hiraganaModel()
     let output = try? model.prediction(image: pixelBuffer!)
     informResultPopUp(message: (output?.classLabel)!)
     print(output?.classLabel as Any)
-    
-//    if segmentedControl.selectedSegmentIndex == 0 {
-//      let model = hiraganaModel3()
-//      let output = try? model.prediction(image: pixelBuffer!)
-//      informResultPopUp(message: (output?.classLabel)!)
-//      print(output?.classLabel)
-//    } else {
-//      let model = katakanaModel()
-//      let output = try? model.prediction(image: pixelBuffer!)
-//      informResultPopUp(message: (output?.classLabel)!)
-//      print(output?.classLabel)
-//    }
-    
     
   }
   

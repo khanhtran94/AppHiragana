@@ -35,7 +35,7 @@ extension UIImage{
     let status = CVPixelBufferCreate(kCFAllocatorDefault,
                                      Int(width),
                                      Int(height),
-                                     kCVPixelFormatType_OneComponent8,
+                                     kCVPixelFormatType_32BGRA,
                                      attrs,
                                      &pixelBuffer)
     guard let resultPixelBuffer = pixelBuffer, status == kCVReturnSuccess else {
@@ -82,7 +82,7 @@ extension UIImage{
     let status = CVPixelBufferCreate(kCFAllocatorDefault,
                                      Int(width),
                                      Int(height),
-                                     kCVPixelFormatType_OneComponent8,
+                                     kCVPixelFormatType_32BGRA,
                                      attrs,
                                      &pixelBuffer)
     
@@ -126,7 +126,7 @@ extension UIImage {
 //                        colorSpace: CGColorSpaceCreateDeviceRGB(),
 //                        alphaInfo: .noneSkipFirst)
     return _pixelBuffer(width: width, height: height,
-                        pixelFormatType: kCVPixelFormatType_OneComponent8,
+                        pixelFormatType: kCVPixelFormatType_32BGRA,
                         colorSpace: CGColorSpaceCreateDeviceRGB(),
                         alphaInfo: .noneSkipFirst)
   }

@@ -18,6 +18,7 @@
 		73FC9F8422A82B40004117B3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8322A82B40004117B3 /* UIButton+Extension.swift */; };
 		73FC9F8622A82B64004117B3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8522A82B64004117B3 /* UIImage+Extension.swift */; };
 		73FC9F9022AD918A004117B3 /* hiraganaModel3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F8F22AD918A004117B3 /* hiraganaModel3.mlmodel */; };
+		73FC9F9422AEDB3D004117B3 /* hiraganeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73FC9F9322AEDB3D004117B3 /* hiraganeModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		73FC9F8322A82B40004117B3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		73FC9F8522A82B64004117B3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		73FC9F8F22AD918A004117B3 /* hiraganaModel3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hiraganaModel3.mlmodel; sourceTree = "<group>"; };
+		73FC9F9322AEDB3D004117B3 /* hiraganeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = hiraganeModel.mlmodel; path = ../../ModelTrain/11062019/hiraganeModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				73EA530822989A1400F65C50 /* Japan */,
 				73EA530722989A1400F65C50 /* Products */,
 				73FC9F8F22AD918A004117B3 /* hiraganaModel3.mlmodel */,
+				73FC9F9322AEDB3D004117B3 /* hiraganeModel.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +158,7 @@
 			files = (
 				73FC9F8222A82AC9004117B3 /* UIColor+Extension.swift in Sources */,
 				73EA531222989A1400F65C50 /* Japan.xcdatamodeld in Sources */,
+				73FC9F9422AEDB3D004117B3 /* hiraganeModel.mlmodel in Sources */,
 				73FC9F8622A82B64004117B3 /* UIImage+Extension.swift in Sources */,
 				73EA530C22989A1400F65C50 /* ViewController.swift in Sources */,
 				73EA533A2298AFF700F65C50 /* JpanVC.swift in Sources */,
