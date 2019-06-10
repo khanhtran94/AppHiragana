@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-ir-Alk">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-ir-Alk">
                                 <rect key="frame" x="0.0" y="34" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Paractice Writiting Japan" id="nhd-td-kUb"/>
                                 </items>
@@ -45,13 +44,20 @@
                                     <action selector="recognizePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0d-gk-Nf9"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIW-H3-bkd">
-                                <rect key="frame" x="27" y="107" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIW-H3-bkd">
+                                <rect key="frame" x="41" y="106" width="320" height="320"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="7dM-lc-MIu"/>
+                                    <constraint firstAttribute="width" constant="320" id="ufL-cA-Fe7"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIW-H3-bkd" secondAttribute="trailing" constant="14" id="PwJ-mj-yVc"/>
+                            <constraint firstItem="uIW-H3-bkd" firstAttribute="top" secondItem="p2k-ir-Alk" secondAttribute="bottom" constant="22" id="kNM-LH-HVa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
